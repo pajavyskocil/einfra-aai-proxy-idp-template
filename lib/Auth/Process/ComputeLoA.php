@@ -68,7 +68,7 @@ class ComputeLoA extends ProcessingFilter
         }
 
         foreach ($entityCategoryAttributes as $entityCategoryAttribute) {
-            if (substr($entityCategoryAttribute, 0, strlen(self::EDUID_IDP_GROUP)) === self::EDUID_IDP_GROUP) {
+            if (strpos($entityCategoryAttribute, self::EDUID_IDP_GROUP) === 0) {
                 $this->entityCategory = substr(
                     $entityCategoryAttribute,
                     strlen(self::EDUID_IDP_GROUP),

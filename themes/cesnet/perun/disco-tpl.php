@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 use SimpleSAML\Metadata\MetaDataStorageHandler;
 use SimpleSAML\Utils\HTTP;
@@ -64,11 +64,11 @@ $this->includeAtTemplateBase('includes/header.php');
 
 if ($authContextClassRef != null) {
     foreach ($authContextClassRef as $value) {
-        if (substr($value, 0, strlen(URN_CESNET_PROXYIDP_FILTER)) === URN_CESNET_PROXYIDP_FILTER) {
+        if (strpos($value, URN_CESNET_PROXYIDP_FILTER) === 0) {
             $filter = substr($value, strlen(URN_CESNET_PROXYIDP_FILTER), strlen($value));
-        } elseif (substr($value, 0, strlen(URN_CESNET_PROXYIDP_EFILTER)) === URN_CESNET_PROXYIDP_EFILTER) {
+        } elseif (strpos($value, URN_CESNET_PROXYIDP_EFILTER) === 0) {
             $efilter = substr($value, strlen(URN_CESNET_PROXYIDP_EFILTER), strlen($value));
-        } elseif (substr($value, 0, strlen(URN_CESNET_PROXYIDP_IDPENTITYID)) === URN_CESNET_PROXYIDP_IDPENTITYID) {
+        } elseif (strpos($value, URN_CESNET_PROXYIDP_IDPENTITYID) === 0) {
             $idpEntityId = substr($value, strlen(URN_CESNET_PROXYIDP_IDPENTITYID), strlen($value));
         }
     }
