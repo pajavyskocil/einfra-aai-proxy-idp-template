@@ -2,6 +2,7 @@
 
 namespace SimpleSAML\Module\cesnet\Auth\Process;
 
+use SimpleSAML\Auth\ProcessingFilter;
 use SimpleSAML\Metadata\MetaDataStorageHandler;
 use SimpleSAML\Logger;
 
@@ -12,7 +13,7 @@ use SimpleSAML\Logger;
  *
  * @author Pavel Vyskocil <vyskocilpavel@muni.cz>
  */
-class ComputeLoA extends \SimpleSAML\Auth\ProcessingFilter
+class ComputeLoA extends ProcessingFilter
 {
     const UNIVERSITY = 'university';
     const AVCR = 'avcr';
