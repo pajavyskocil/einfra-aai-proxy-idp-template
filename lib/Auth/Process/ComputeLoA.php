@@ -92,7 +92,8 @@ class ComputeLoA extends ProcessingFilter
 
         if ($this->entityCategory === null || empty($this->entityCategory)) {
             return 0;
-        } elseif ($this->entityCategory === self::UNIVERSITY) {
+        }
+        if ($this->entityCategory === self::UNIVERSITY) {
             foreach ($this->eduPersonScopedAffiliation as $affiliation) {
                 if (preg_match(
                     '/(^employee@.+\.cz$)|' .
