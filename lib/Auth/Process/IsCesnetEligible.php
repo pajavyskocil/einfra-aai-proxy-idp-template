@@ -6,9 +6,7 @@ use SimpleSAML\Auth\ProcessingFilter;
 use SimpleSAML\Module;
 use SimpleSAML\Module\perun\Adapter;
 use SimpleSAML\Module\perun\LdapConnector;
-use SimpleSAML\Module\perun\RpcConnector;
 use SimpleSAML\Module\perun\AdapterLdap;
-use SimpleSAML\Module\perun\AdapterRpc;
 use SimpleSAML\Logger;
 use SimpleSAML\Error\Exception;
 
