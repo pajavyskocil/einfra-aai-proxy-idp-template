@@ -206,7 +206,7 @@ class IsCesnetEligible extends ProcessingFilter
             } else {
                 $affiliations = $organization['cesnetcustomeraffiliation'];
                 foreach ($affiliations as $affiliation) {
-                    array_push($allowedAffiliations, $affiliation);
+                    $allowedAffiliations[] = $affiliation;
                 }
             }
         } catch (Exception $ex) {

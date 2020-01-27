@@ -211,7 +211,7 @@ if ($onLoad !== '') {
                             $langnames[$lang] . '</a>';
                     }
                 }
-                echo join(' | ', $textarray);
+                echo implode(' | ', $textarray);
                 echo '</div>';
             }
         }
