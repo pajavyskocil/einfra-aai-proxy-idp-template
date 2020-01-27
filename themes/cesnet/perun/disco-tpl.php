@@ -20,9 +20,9 @@ if (isset($_POST['continue'])) {
     $canContinue = true;
 }
 
-const URN_CESNET_PROXYIDP_FILTER = "urn:cesnet:proxyidp:filter:";
-const URN_CESNET_PROXYIDP_EFILTER = "urn:cesnet:proxyidp:efilter:";
-const URN_CESNET_PROXYIDP_IDPENTITYID = "urn:cesnet:proxyidp:idpentityid:";
+const URN_CESNET_PROXYIDP_FILTER = 'urn:cesnet:proxyidp:filter:';
+const URN_CESNET_PROXYIDP_EFILTER = 'urn:cesnet:proxyidp:efilter:';
+const URN_CESNET_PROXYIDP_IDPENTITYID = 'urn:cesnet:proxyidp:idpentityid:';
 
 const WARNING_TYPE_INFO = 'INFO';
 const WARNING_TYPE_WARNING = 'WARNING';

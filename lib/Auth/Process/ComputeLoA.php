@@ -55,7 +55,7 @@ class ComputeLoA extends ProcessingFilter
         } else {
             Logger::error('cesnet:ComputeLoA - There are no element with name \'EntityAttributes\' '
                 . 'and subelement with name \'http://macedir.org/entity-category\' in metadata for IdP with entityId '
-                . $request['saml:sp:IdP'] . "!");
+                . $request['saml:sp:IdP'] . '!');
             $entityCategoryAttributes = [];
         }
 
